@@ -1,0 +1,50 @@
+
+.get-touch__hr{
+margin-bottom: 48px;
+background: $color-grayish-dark-blue;
+opacity: 0.15;
+}
+.get-touch__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.get-touch__heading {
+    max-width: 350px;
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+}
+.get-touch__right-wrapper {
+    max-width: 635px;
+}
+.get-touch__desc {
+    font-size: 17px;
+    line-height: 30px;
+    color: $color-grayish-dark-blue;
+    opacity: 0.8;
+    margin-bottom: 24px;
+}
+.get-touch__social-list {
+    display: flex;
+    align-items: center;
+    @include list-unstyled;
+}
+.get-touch__social-item {
+    &:not(:last-child){
+        margin-right: 16px;
+    }
+}
+.get-touch__social-link {
+    color: $color-grayish-dark-blue;
+}
+@include breakpoint-down(950px) {
+    .get-touch__wrapper {
+        flex-direction: column;
+    }
+    .get-touch__heading {
+        margin-bottom: 24px;
+    }
+}

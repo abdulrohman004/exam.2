@@ -1,0 +1,97 @@
+.site-hero{
+    position: relative;
+    z-index: 1;
+    padding-top: 243px;
+    padding-bottom: 370px;
+    background-image: url(../../img/site-hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $color-light-grey;
+}
+@include cssretina {
+    background-image: url(../../img/site-hero-img@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.site-hero__wrapper {
+    position: absolute;
+    z-index: 1;
+    max-width: 445px;
+    left: 0;
+    bottom: 0;
+    background-color: $color-very-light-grey;
+}
+.site-hero__wrapper-content {
+    max-width: 390px;
+    margin-right: 55px;
+    margin-bottom: 53px;
+    text-align: left;
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.446429px;
+}
+.site-hero__wrapper-button {
+    max-width: 200px;
+    background-color: $color-dark-blue;
+}
+.site-hero__wrapper-button-link {
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-primary;
+}
+.site-hero__wrapper-button {
+    padding: 0;
+    border: none;
+    background-color: $color-dark-blue;
+    cursor:pointer;
+    &:hover{
+        background-color: $color-slightly-desaturated-cyan;
+    }
+}
+.site-hero__wrapper-inner {
+    display: flex;
+    align-items: center;
+}
+.site-hero__wrapper-img {
+    padding: 16px;
+}
+.site-hero__wrapper-text {
+    width: 152px;
+    padding-top: 17px;
+}
+.site-hero__wrapper-link {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-primary;
+}
+@include breakpoint-down(700px){
+    .site-hero{
+        background-image:url(../../img/hero-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .site-hero__wrapper-content{
+        margin-top: 56px;
+        margin-bottom: 48px;
+        margin-right: 56px;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+
+    }
+    
+}
+@include breakpoint-down(550px){
+    .site-hero{
+        background-image: url(../../img/hero-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .site-hero__wrapper-content{
+        max-width: 311px;
+    }
+}

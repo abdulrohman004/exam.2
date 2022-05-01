@@ -1,0 +1,61 @@
+.ineresting-project {
+}
+.ineresting-project__wrapper {
+    display: flex;
+    align-items: center;
+}
+.ineresting-project__title {
+    max-width: 400px;
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+}
+.ineresting-project__line {
+    width: 100%;
+    max-width: 480px;
+}
+.ineresting-project__link {
+    &:hover{
+        color: $color-primary;
+        background-color:$color-dark-blue;
+    }
+    margin-left: auto;
+    padding: 17px 35px 17px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid $color-grayish-dark-blue;
+    color: $color-grayish-dark-blue;
+}
+@include breakpoint-down(1100px){
+    .ineresting-project__line{
+        width: 113px;
+    }
+}
+@include breakpoint-down(743px){
+    .ineresting-project__wrapper{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 80px;
+    }
+    .ineresting-project__title{
+        width: 341px;
+    }
+    .ineresting-project__line{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .ineresting-project__link{
+        margin: 0;
+    }
+
+}
+

@@ -1,0 +1,21 @@
+/*HEADER*/
+.site-header {
+    padding-top: 64px;
+    padding-bottom: 54px;
+}
+.site-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header__logo {
+}
+.site-header__logo-img {
+    display: block;
+}
+@include breakpoint-down(600px){
+    .site-header{
+        padding-top: 38px;
+        padding-bottom: 40px;
+    }
+}
